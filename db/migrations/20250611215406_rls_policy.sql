@@ -1,0 +1,6 @@
+ALTER TABLE users ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Allow full access"
+ON users
+FOR ALL
+USING (true);
